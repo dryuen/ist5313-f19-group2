@@ -1,10 +1,108 @@
-body
+body 
 {
 	margin: 0px;
 	padding: 0px;
-	font-size: 12px;
+	background: #9f4h7a;
+	color: green;
 	font-family: Arial;
 }
+
+#uniquestyle
+{
+	color: #00BFFF;
+	font-family: Arial;
+	font-size: 30px;
+}
+
+h1
+{
+	color: #E74C3C;
+	text-align: center;
+	font-size: 25px;
+	font-family: Arial;
+	background: pink;
+}
+
+h2
+{
+	
+	text-align: center;
+	color: yellow;
+	font-family: Arial;
+	font-size: 30px;
+}
+
+h3
+{
+	color: #E74C3C;
+	text-align: center;
+	font-family: Arial;
+	background: purple;
+	font-size: 30px;
+}
+p
+{
+	color: #f0233zf;
+}
+.sometext
+{
+		font-weight: bold;
+	  	background: pink;
+		text-align: center;
+		color: #E74C3C;
+}
+
+.someothertext
+{
+		text-align: center;
+		font-family: Courier;
+	  	background: green;
+		color: yellow;
+}
+
+
+
+.heart {
+   color: red; 
+   font-size: 65pt;
+}
+
+.words {
+   font-family: impact;
+   font-size: 46pt;
+}
+
+#style1
+{
+		font-size: 38px;
+	  	border: solid yellow;
+		color: #00BFFF;
+        
+}
+
+a
+{
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: blue;
+}
+
+a:hover
+{
+	border: solid green;
+	font-size: 45px;
+}
+
+
+
+
+
+
+
+
 
 #main-info
 {
