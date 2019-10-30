@@ -1,0 +1,12 @@
+<div id="main">
+			<div class="column nav">
+				Your navigation goes here.
+			</div>
+			<div class="column content">
+				Your main content goes here.
+			</div>
+		</div>
+		
+					function generateText(sentenceCount){
+				for (var i=0; i<sentenceCount; i++)
+				document.write(bodyText[Math.floor(Math.random()*7)]+" ")
