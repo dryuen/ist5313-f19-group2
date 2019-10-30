@@ -172,3 +172,10 @@ audio
 {
 	width: 230px;
 }
+<div id="main">
+			<div class="column nav">
+				Your navigation goes here.
+			</div>
+			<div class="column content">
+				Your main content goes here.
+			</div>
