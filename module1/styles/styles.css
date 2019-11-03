@@ -93,11 +93,8 @@ a:visited
 a:hover
 {
 	border: solid green;
-	font-size: 45px;
+	font-size: 20px;
 }
-
-
-
 
 
 
@@ -172,10 +169,20 @@ audio
 {
 	width: 230px;
 }
-<div id="main">
-			<div class="column nav">
-				Your navigation goes here.
-			</div>
-			<div class="column content">
-				Your main content goes here.
-			</div>
+
+
+.leftboxed {
+  border: 1px solid green ;
+  width:240px;
+  height:123px;
+  float:left;
+}
+
+		
+.rightboxed {
+			width:240px;
+			border: 1px solid green ;
+			height:123px;
+			float:right;
+			width:240px;
+		}
