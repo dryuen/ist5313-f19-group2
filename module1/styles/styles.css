@@ -93,7 +93,6 @@ a:visited
 a:hover
 {
 	border: solid green;
-	font-size: 45px;
 }
 
 
@@ -179,3 +178,64 @@ audio
 			<div class="column content">
 				Your main content goes here.
 			</div>
+			
+					<style>
+
+			/* move this CSS to a separate file */
+
+			#main:after
+
+			{
+
+				display: table;
+
+				clear: both;
+
+			}
+
+
+			.column
+
+			{
+
+				float: left;
+
+				padding: 10px;
+
+			}
+
+
+			.nav
+
+			{
+
+				background: #00ff00;
+
+				width: 18%;
+
+			}
+
+
+			.content
+
+			{
+
+				background: #ffff00;
+
+				width: 50%;
+
+			}
+
+			
+			.aside-content
+
+			{
+
+				background: #00ffff;
+
+				width: 18%;
+
+			}
+
+		</style>
+			
