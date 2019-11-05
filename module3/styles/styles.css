@@ -93,17 +93,20 @@ a:visited
 a:hover
 {
 	border: solid green;
-	font-size: 45px;
+<<<<<<< HEAD
+	font-size: 20px;
+=======
+>>>>>>> branch 'master' of https://github.com/dryuen/ist5313-f19-group2.git
 }
 
 
 
+<<<<<<< HEAD
 
 
 
-
-
-
+=======
+>>>>>>> branch 'master' of https://github.com/dryuen/ist5313-f19-group2.git
 #main-info
 {
 	float: left;
@@ -172,3 +175,87 @@ audio
 {
 	width: 230px;
 }
+<<<<<<< HEAD
+
+
+.leftboxed {
+  border: 1px solid green ;
+  width:240px;
+  height:123px;
+  float:left;
+}
+
+		
+.rightboxed {
+			width:240px;
+			border: 1px solid green ;
+			height:123px;
+			float:right;
+			width:240px;
+		}
+=======
+<div id="main">
+			<div class="column nav">
+				Your navigation goes here.
+			</div>
+			<div class="column content">
+				Your main content goes here.
+			</div>
+			
+					<style>
+
+			/* move this CSS to a separate file */
+
+			#main:after
+
+			{
+
+				display: table;
+
+				clear: both;
+
+			}
+
+
+			.column
+
+			{
+
+				float: left;
+
+				padding: 10px;
+
+			}
+
+			.nav
+
+			{
+
+				background: #00ff00;
+
+				width: 18%;
+
+			}
+
+			.content
+
+			{
+
+				background: #ffff00;
+
+				width: 50%;
+
+			}
+
+			
+			.aside-content
+
+			{
+
+				background: #00ffff;
+
+				width: 18%;
+
+			}
+
+		</style>
