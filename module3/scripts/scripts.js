@@ -78,3 +78,16 @@ function finishCourse()
 	oScorm.save();
 	oScorm.quit();
 }
+
+function visitTopic2_1()
+{
+	sessionStorage.setItem( "topic2_1", "visited" );
+	alert( "topic2_1");
+	checkAllVisited();
+}
+
+function visitTopic3_1()
+{
+	sessionStorage.setItem( "topic3_1", "visited" );
+	alert( "topic3_1");
+	checkAllVisited();
