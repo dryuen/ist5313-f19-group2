@@ -293,3 +293,15 @@ main {
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
 }	
+
+
+
+#quiz-link
+{
+	display: none;
+}
+
+#certificate-link
+{
+	display: none;
+}
