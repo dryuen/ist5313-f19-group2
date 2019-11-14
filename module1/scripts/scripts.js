@@ -25,8 +25,12 @@ function startCourse()
             sessionStorage.clear();
             // set the "key" by giving it a value.  all values are strings!
             // course_started indicated that this OLM has started
-    			sessionStorage.setItem( "course_started", "1" );
-    			
+    		sessionStorage.setItem( "course_started", "1" );
+			sessionStorage.setItem( "topic2_1", "unvisited" );
+			sessionStorage.setItem( "topic3_1", "unvisited" );
+			    		
+
+	
 			// set the values you want to persist throughout the website here
         }
 	}
@@ -66,6 +70,33 @@ function initializeSCORM()
 		alert( "Welcome, " + oScorm.get( "cmi.core.student_name" ) + "!" );
 	}
 }
+
+
+function visitTopic2_1()
+{
+	sessionStorage.setItem( "topic2_1", "visited" );
+	alert( "topic2_1");
+	checkAllVisited();
+}
+
+function visitTopic3_1()
+{
+	sessionStorage.setItem( "topic3_1", "visited" );
+	alert( "topic3_1");
+	checkAllVisited();
+}
+
+function checkAllVisited()
+{
+	var t21 = sessionStorage.getItem( "topic2_1" );
+	var t31 = sessionStorage.getItem( "topic3_1" );
+	
+	if( t21 == "visited" && t31 == "visited" )
+	{
+		// unhide the quiz link
+	}
+}
+
 
 // This function reports the score from the assessment to the LMS
 // This should only be called when the user submits the answers to the quiz
