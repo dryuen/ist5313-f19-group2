@@ -26,12 +26,24 @@ function startCourse()
             // set the "key" by giving it a value.  all values are strings!
             // course_started indicated that this OLM has started
     		sessionStorage.setItem( "course_started", "1" );
-			sessionStorage.setItem( "topic2_1", "unvisited" );
-			sessionStorage.setItem( "topic3_1", "unvisited" );
+
+			
 			    		
 
 	
 			// set the values you want to persist throughout the website here
+			sessionStorage.setItem( "page2Visited", "unvisited" );
+			sessionStorage.setItem( "page3Visited", "unvisited" );
+			sessionStorage.setItem( "page4Visited", "unvisited" );
+			sessionStorage.setItem( "page5Visited", "unvisited" );
+			sessionStorage.setItem( "page6Visited", "unvisited" );
+			sessionStorage.setItem( "page7Visited", "unvisited" );
+			sessionStorage.setItem( "page8Visited", "unvisited" );
+			sessionStorage.setItem( "page9Visited", "unvisited" );
+			sessionStorage.setItem( "page10Visited", "unvisited" );
+			sessionStorage.setItem( "page11Visited", "unvisited" );
+			sessionStorage.setItem( "page12Visited", "unvisited" );
+			sessionStorage.setItem( "page13Visited", "unvisited" );
         }
 	}
 	
@@ -72,28 +84,117 @@ function initializeSCORM()
 }
 
 
-function visitTopic2_1()
+function visitpage1()
 {
-	sessionStorage.setItem( "topic2_1", "visited" );
-	alert( "topic2_1");
+	sessionStorage.setItem( "page1Visited", "visited" );
+	alert( "page1.html");
 	checkAllVisited();
 }
 
-function visitTopic3_1()
+function visitpage2()
 {
-	sessionStorage.setItem( "topic3_1", "visited" );
-	alert( "topic3_1");
+	sessionStorage.setItem( "page2Visited", "visited" );
+	alert( "page2.html");
 	checkAllVisited();
 }
+
+function visitpage3.html()
+{
+	sessionStorage.setItem( "page3Visited", "visited" );
+	alert( "page3.html");
+	checkAllVisited();
+}
+function visitpage4()
+{
+	sessionStorage.setItem( "page4Visited", "visited" );
+	alert( "page4.html");
+	checkAllVisited();
+}
+
+function visitpage5()
+{
+	sessionStorage.setItem( "page5Visited", "visited" );
+	alert( "page5.html");
+	checkAllVisited();
+}
+
+function visitpage6.html()
+{
+	sessionStorage.setItem( "page6Visited", "visited" );
+	alert( "page6.html");
+	checkAllVisited();
+}
+
+function visitpage7()
+{
+	sessionStorage.setItem( "page7Visited", "visited" );
+	alert( "page7.html");
+	checkAllVisited();
+}
+
+function visitpage8()
+{
+	sessionStorage.setItem( "page8Visited", "visited" );
+	alert( "page8.html");
+	checkAllVisited();
+}
+
+function visitpage9()
+{
+	sessionStorage.setItem( "page9Visited", "visited" );
+	alert( "page9.html");
+	checkAllVisited();
+}
+
+function visitpage10.html()
+{
+	sessionStorage.setItem( "page10Visited", "visited" );
+	alert( "page10.html");
+	checkAllVisited();
+}
+function visitpage11()
+{
+	sessionStorage.setItem( "page11Visited", "visited" );
+	alert( "page11.html");
+	checkAllVisited();
+}
+
+function visitpage12()
+{
+	sessionStorage.setItem( "page12Visited", "visited" );
+	alert( "page12.html");
+	checkAllVisited();
+}
+
+function visitpage13.html()
+{
+	sessionStorage.setItem( "page13Visited", "visited" );
+	alert( "page13.html");
+	checkAllVisited();
+}
+
 
 function checkAllVisited()
 {
-	var t21 = sessionStorage.getItem( "topic2_1" );
-	var t31 = sessionStorage.getItem( "topic3_1" );
+	var p1 = sessionStorage.getItem( "page1Visited" );
+	var p2 = sessionStorage.getItem( "page2Visited" );
+	var p3 = sessionStorage.getItem( "page3Visited" );
+	var p4 = sessionStorage.getItem( "page4Visited" );
+	var p5 = sessionStorage.getItem( "page5Visited" );
+	var p6 = sessionStorage.getItem( "page6Visited" );
+	var p7 = sessionStorage.getItem( "page7Visited" );
+	var p8 = sessionStorage.getItem( "page8Visited" );
+	var p9 = sessionStorage.getItem( "page9Visited" );
+	var p10 = sessionStorage.getItem( "page10Visited" );
+	var p11 = sessionStorage.getItem( "page11Visited" );
+	var p12 = sessionStorage.getItem( "page12Visited" );
+	var p13 = sessionStorage.getItem( "page13Visited" );
 	
-	if( t21 == "visited" && t31 == "visited" )
+	
+	if( p1 == "visited" && p2 == "visited" p3 == "visited" && p4 == "visited" p5 == "visited" && p6 == "visited" p7 == "visited" && p8 == "visited" p9 == "visited" && p10 == "visited" && p11 == "visited" p12 == "visited" && p13 == "visited" )
 	{
 		// unhide the quiz link
+		document.getElementByID( "content-frame" ).contentWindow.document.getElementByID( "quiz-link" ).style.display = "inline";
 	}
 }
 
