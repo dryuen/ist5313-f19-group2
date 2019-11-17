@@ -18,8 +18,21 @@
 	
 	<body onload="javascript:startCourse()" onunload="javascript:finishCourse()">
 		<!-- replace topic-1.html with the first page of your course -->
-		<iframe src="page1.html" name="main" width="1910" height="1800" id="content-frame">
-		</iframe> 
+		
+		<iframe src="page1.html" style="position: fixed;
+		top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 999999;
+    height: 100%;
+  ">
+</iframe>
+		
 	</body>
 	
 </html>

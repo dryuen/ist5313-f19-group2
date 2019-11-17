@@ -27,9 +27,6 @@ function startCourse()
             // course_started indicated that this OLM has started
     		sessionStorage.setItem( "course_started", "1" );
 
-			
-			    		
-
 	
 			// set the values you want to persist throughout the website here
 			sessionStorage.setItem( "page2Visited", "unvisited" );
@@ -83,29 +80,6 @@ function initializeSCORM()
 	}
 }
 
-function checkAllVisited()
-{
-	var p1 = sessionStorage.getItem( "page1Visited" );
-	var p2 = sessionStorage.getItem( "page2Visited" );
-	var p3 = sessionStorage.getItem( "page3Visited" );
-	var p4 = sessionStorage.getItem( "page4Visited" );
-	var p5 = sessionStorage.getItem( "page5Visited" );
-	var p6 = sessionStorage.getItem( "page6Visited" );
-	var p7 = sessionStorage.getItem( "page7Visited" );
-	var p8 = sessionStorage.getItem( "page8Visited" );
-	var p9 = sessionStorage.getItem( "page9Visited" );
-	var p10 = sessionStorage.getItem( "page10Visited" );
-	var p11 = sessionStorage.getItem( "page11Visited" );
-	var p12 = sessionStorage.getItem( "page12Visited" );
-	var p13 = sessionStorage.getItem( "page13Visited" );
-	
-	
-	if( p1 == "visited" && p2 == "visited" p3 == "visited" && p4 == "visited" p5 == "visited" && p6 == "visited" p7 == "visited" && p8 == "visited" p9 == "visited" && p10 == "visited" && p11 == "visited" p12 == "visited" && p13 == "visited" )
-	{
-		// unhide the quiz link
-		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
-	}
-}
 
 function visitpage1()
 {
@@ -196,8 +170,29 @@ function visitpage13()
 	checkAllVisited();
 }
 
-
-
+function checkAllVisited()
+{
+	var p1 = sessionStorage.getItem( "page1Visited" );
+	var p2 = sessionStorage.getItem( "page2Visited" );
+	var p3 = sessionStorage.getItem( "page3Visited" );
+	var p4 = sessionStorage.getItem( "page4Visited" );
+	var p5 = sessionStorage.getItem( "page5Visited" );
+	var p6 = sessionStorage.getItem( "page6Visited" );
+	var p7 = sessionStorage.getItem( "page7Visited" );
+	var p8 = sessionStorage.getItem( "page8Visited" );
+	var p9 = sessionStorage.getItem( "page9Visited" );
+	var p10 = sessionStorage.getItem( "page10Visited" );
+	var p11 = sessionStorage.getItem( "page11Visited" );
+	var p12 = sessionStorage.getItem( "page12Visited" );
+	var p13 = sessionStorage.getItem( "page13Visited" );
+	
+	
+	if( p1 == "visited" && p2 == "visited" p3 == "visited" && p4 == "visited" p5 == "visited" && p6 == "visited" p7 == "visited" && p8 == "visited" p9 == "visited" && p10 == "visited" && p11 == "visited" p12 == "visited" && p13 == "visited" )
+	{
+		// unhide the quiz link
+		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
+	}
+}
 
 
 // This function reports the score from the assessment to the LMS
