@@ -83,7 +83,7 @@ function initializeSCORM()
 
 function visitpage1()
 {
-	alert( "page1.html");
+	//alert( "page1.html");
 	sessionStorage.setItem( "page1Visited", "visited" );
 	checkAllVisited();
 }
@@ -91,20 +91,20 @@ function visitpage1()
 function visitpage2()
 {
 	sessionStorage.setItem( "page2Visited", "visited" );
-	alert( "page2.html");
+	//alert( "page2.html");
 	checkAllVisited();
 }
 
 function visitpage3()
 {
 	sessionStorage.setItem( "page3Visited", "visited" );
-	alert( "page3.html");
+	//alert( "page3.html");
 	checkAllVisited();
 }
 function visitpage4()
 {
 	sessionStorage.setItem( "page4Visited", "visited" );
-	alert( "page4.html");
+	//alert( "page4.html");
 	checkAllVisited();
 }
 
@@ -125,48 +125,48 @@ function visitpage6()
 function visitpage7()
 {
 	sessionStorage.setItem( "page7Visited", "visited" );
-	alert( "page7.html");
+	//alert( "page7.html");
 	checkAllVisited();
 }
 
 function visitpage8()
 {
 	sessionStorage.setItem( "page8Visited", "visited" );
-	alert( "page8.html");
+	//alert( "page8.html");
 	checkAllVisited();
 }
 
 function visitpage9()
 {
 	sessionStorage.setItem( "page9Visited", "visited" );
-	alert( "page9.html");
+	//alert( "page9.html");
 	checkAllVisited();
 }
 
 function visitpage10()
 {
 	sessionStorage.setItem( "page10Visited", "visited" );
-	alert( "page10.html");
+	//alert( "page10.html");
 	checkAllVisited();
 }
 function visitpage11()
 {
 	sessionStorage.setItem( "page11Visited", "visited" );
-	alert( "page11.html");
+	//alert( "page11.html");
 	checkAllVisited();
 }
 
 function visitpage12()
 {
 	sessionStorage.setItem( "page12Visited", "visited" );
-	alert( "page12.html");
+	//alert( "page12.html");
 	checkAllVisited();
 }
 
 function visitpage13()
 {
 	sessionStorage.setItem( "page13Visited", "visited" );
-	alert( "page13.html");
+	//alert( "page13.html");
 	checkAllVisited();
 }
 
