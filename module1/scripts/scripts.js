@@ -111,14 +111,14 @@ function visitpage4()
 function visitpage5()
 {
 	sessionStorage.setItem( "page5Visited", "visited" );
-	alert( "page5.html");
+	//alert( "page5.html");
 	checkAllVisited();
 }
 
 function visitpage6()
 {
 	sessionStorage.setItem( "page6Visited", "visited" );
-	alert( "page6.html");
+	//alert( "page6.html");
 	checkAllVisited();
 }
 
@@ -192,6 +192,7 @@ function checkAllVisited()
 		p7 == "visited" && p8 == "visited" && p9 == "visited" && 
 		p10 == "visited" && p11 == "visited" && p12 == "visited" && p13 == "visited" )
 	{
+		alert( "quiz unhidden");
 		// unhide the quiz link
 		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
 	}
