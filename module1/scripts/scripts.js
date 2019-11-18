@@ -1,5 +1,4 @@
 
-
 // this file holds any scripts that have to do with communicating with the learning management system (LMS)
 
 // define a SCORM object to interface with LMS
@@ -26,7 +25,6 @@ function startCourse()
             // set the "key" by giving it a value.  all values are strings!
             // course_started indicated that this OLM has started
     		sessionStorage.setItem( "course_started", "1" );
-
 	
 			// set the values you want to persist throughout the website here
 			sessionStorage.setItem( "page2Visited", "unvisited" );
@@ -46,6 +44,8 @@ function startCourse()
 	
 	// initializeSCORM after the OLM environment has been set up
 	initializeSCORM();
+	
+
 }
 
 // This function initializes the course by connecting the course to the LMS 
@@ -83,8 +83,8 @@ function initializeSCORM()
 
 function visitpage1()
 {
-	sessionStorage.setItem( "page1Visited", "visited" );
 	alert( "page1.html");
+	sessionStorage.setItem( "page1Visited", "visited" );
 	checkAllVisited();
 }
 
@@ -187,7 +187,10 @@ function checkAllVisited()
 	var p13 = sessionStorage.getItem( "page13Visited" );
 	
 	
-	if( p1 == "visited" && p2 == "visited" p3 == "visited" && p4 == "visited" p5 == "visited" && p6 == "visited" p7 == "visited" && p8 == "visited" p9 == "visited" && p10 == "visited" && p11 == "visited" p12 == "visited" && p13 == "visited" )
+	if( p1 == "visited" && p2 == "visited" && p3 == "visited" && 
+		p4 == "visited" && p5 == "visited" && p6 == "visited" && 
+		p7 == "visited" && p8 == "visited" && p9 == "visited" && 
+		p10 == "visited" && p11 == "visited" && p12 == "visited" && p13 == "visited" )
 	{
 		// unhide the quiz link
 		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
