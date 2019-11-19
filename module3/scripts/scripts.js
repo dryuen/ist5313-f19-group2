@@ -1,3 +1,4 @@
+
 // this file holds any scripts that have to do with communicating with the learning management system (LMS)
 
 // define a SCORM object to interface with LMS
@@ -23,14 +24,26 @@ function startCourse()
             sessionStorage.clear();
             // set the "key" by giving it a value.  all values are strings!
             // course_started indicated that this OLM has started
-    			sessionStorage.setItem( "course_started", "1" );
-    			
+    		sessionStorage.setItem( "course_started", "1" );
+	
 			// set the values you want to persist throughout the website here
+			sessionStorage.setItem( "page2Visited", "unvisited" );
+			sessionStorage.setItem( "page3Visited", "unvisited" );
+			sessionStorage.setItem( "page4Visited", "unvisited" );
+			sessionStorage.setItem( "page5Visited", "unvisited" );
+			sessionStorage.setItem( "page6Visited", "unvisited" );
+			sessionStorage.setItem( "page7Visited", "unvisited" );
+			sessionStorage.setItem( "page8Visited", "unvisited" );
+			sessionStorage.setItem( "page9Visited", "unvisited" );
+			sessionStorage.setItem( "page10Visited", "unvisited" );
+			
         }
 	}
 	
 	// initializeSCORM after the OLM environment has been set up
 	initializeSCORM();
+	
+
 }
 
 // This function initializes the course by connecting the course to the LMS 
@@ -65,6 +78,103 @@ function initializeSCORM()
 	}
 }
 
+
+function visitpage1()
+{
+	//alert( "page1.html");
+	sessionStorage.setItem( "page1Visited", "visited" );
+	checkAllVisited();
+}
+
+function visitpage2()
+{
+	sessionStorage.setItem( "page2Visited", "visited" );
+	//alert( "page2.html");
+	checkAllVisited();
+}
+
+function visitpage3()
+{
+	sessionStorage.setItem( "page3Visited", "visited" );
+	//alert( "page3.html");
+	checkAllVisited();
+}
+function visitpage4()
+{
+	sessionStorage.setItem( "page4Visited", "visited" );
+	//alert( "page4.html");
+	checkAllVisited();
+}
+
+function visitpage5()
+{
+	sessionStorage.setItem( "page5Visited", "visited" );
+	//alert( "page5.html");
+	checkAllVisited();
+}
+
+function visitpage6()
+{
+	sessionStorage.setItem( "page6Visited", "visited" );
+	//alert( "page6.html");
+	checkAllVisited();
+}
+
+function visitpage7()
+{
+	sessionStorage.setItem( "page7Visited", "visited" );
+	//alert( "page7.html");
+	checkAllVisited();
+}
+
+function visitpage8()
+{
+	sessionStorage.setItem( "page8Visited", "visited" );
+	//alert( "page8.html");
+	checkAllVisited();
+}
+
+function visitpage9()
+{
+	sessionStorage.setItem( "page9Visited", "visited" );
+	//alert( "page9.html");
+	checkAllVisited();
+}
+
+function visitpage10()
+{
+	sessionStorage.setItem( "page10Visited", "visited" );
+	//alert( "page10.html");
+	checkAllVisited();
+}
+
+function checkAllVisited()
+{
+	var p1 = sessionStorage.getItem( "page1Visited" );
+	var p2 = sessionStorage.getItem( "page2Visited" );
+	var p3 = sessionStorage.getItem( "page3Visited" );
+	var p4 = sessionStorage.getItem( "page4Visited" );
+	var p5 = sessionStorage.getItem( "page5Visited" );
+	var p6 = sessionStorage.getItem( "page6Visited" );
+	var p7 = sessionStorage.getItem( "page7Visited" );
+	var p8 = sessionStorage.getItem( "page8Visited" );
+	var p9 = sessionStorage.getItem( "page9Visited" );
+	var p10 = sessionStorage.getItem( "page10Visited" );
+	
+	
+		//alert( p1 + ", " + p2 + ", " + p3 + ", " + p4 + ", " + p5 + ", " + p6 + ", " + p7 + ", " + p8 + ", " + p9 + ", " + p10 + ", " +p11 + ", " + p12 + ", " +  p13);
+	
+	if( p1 == "visited" && p2 == "visited" && p3 == "visited" && 
+		p4 == "visited" && p5 == "visited" && p6 == "visited" && 
+		p7 == "visited" && p8 == "visited" && p9 == "visited" && 
+		p10 == "visited" )
+	{
+		// unhide the quiz link
+		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
+	}
+}
+
+
 // This function reports the score from the assessment to the LMS
 // This should only be called when the user submits the answers to the quiz
 function reportScores( score )
@@ -78,16 +188,3 @@ function finishCourse()
 	oScorm.save();
 	oScorm.quit();
 }
-
-function visitTopic2_1()
-{
-	sessionStorage.setItem( "topic2_1", "visited" );
-	alert( "topic2_1");
-	checkAllVisited();
-}
-
-function visitTopic3_1()
-{
-	sessionStorage.setItem( "topic3_1", "visited" );
-	alert( "topic3_1");
-	checkAllVisited();

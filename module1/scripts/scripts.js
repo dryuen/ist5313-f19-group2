@@ -168,7 +168,6 @@ function visitpage13()
 	sessionStorage.setItem( "page13Visited", "visited" );
 	//alert( "page13.html");
 	checkAllVisited();
-}
 
 function checkAllVisited()
 {
