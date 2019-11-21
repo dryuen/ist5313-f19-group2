@@ -34,11 +34,7 @@ function startCourse()
 			sessionStorage.setItem( "page6Visited", "unvisited" );
 			sessionStorage.setItem( "page7Visited", "unvisited" );
 			sessionStorage.setItem( "page8Visited", "unvisited" );
-			sessionStorage.setItem( "page9Visited", "unvisited" );
-			sessionStorage.setItem( "page10Visited", "unvisited" );
-			sessionStorage.setItem( "page11Visited", "unvisited" );
-			sessionStorage.setItem( "page12Visited", "unvisited" );
-		 }
+			 }
 	}
 	
 	// initializeSCORM after the OLM environment has been set up
@@ -135,32 +131,6 @@ function visitpage8()
 	checkAllVisited();
 }
 
-function visitpage9()
-{
-	sessionStorage.setItem( "page9Visited", "visited" );
-	//alert( "page9.html");
-	checkAllVisited();
-}
-
-function visitpage10()
-{
-	sessionStorage.setItem( "page10Visited", "visited" );
-	//alert( "page10.html");
-	checkAllVisited();
-}
-function visitpage11()
-{
-	sessionStorage.setItem( "page11Visited", "visited" );
-	//alert( "page11.html");
-	checkAllVisited();
-}
-
-function visitpage12()
-{
-	sessionStorage.setItem( "page12Visited", "visited" );
-	//alert( "page12.html");
-	checkAllVisited();
-}
 
 function checkAllVisited()
 {
@@ -172,17 +142,13 @@ function checkAllVisited()
 	var p6 = sessionStorage.getItem( "page6Visited" );
 	var p7 = sessionStorage.getItem( "page7Visited" );
 	var p8 = sessionStorage.getItem( "page8Visited" );
-	var p9 = sessionStorage.getItem( "page9Visited" );
-	var p10 = sessionStorage.getItem( "page10Visited" );
-	var p11 = sessionStorage.getItem( "page11Visited" );
-	var p12 = sessionStorage.getItem( "page12Visited" );
+	
 		
-		//alert( p1 + ", " + p2 + ", " + p3 + ", " + p4 + ", " + p5 + ", " + p6 + ", " + p7 + ", " + p8 + ", " + p9 + ", " + p10 + ", " +p11 + ", " + p12 + ", " +  p13);
+		//alert( p1 + ", " + p2 + ", " + p3 + ", " + p4 + ", " + p5 + ", " + p6 + ", " + p7 + ", " + p8);
 	
 	if( p1 == "visited" && p2 == "visited" && p3 == "visited" && 
 		p4 == "visited" && p5 == "visited" && p6 == "visited" && 
-		p7 == "visited" && p8 == "visited" && p9 == "visited" && 
-		p10 == "visited" && p11 == "visited" && p12 == "visited" )
+		p7 == "visited" && p8 == "visited" )
 	{
 		// unhide the quiz link
 		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
