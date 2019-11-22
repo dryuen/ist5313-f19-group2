@@ -7,7 +7,7 @@ function processQuiz()
 	var answer2 = document.forms.quiz1.question2.value;
 	var answer3 = document.forms.quiz1.question3.value;
         var answer4 = document.forms.quiz1.question4.value;
-        var answer5 = document.forms.quiz1.question5.value;
+        
 
 	var counter = 0;		// This variable keeps track of the number of correct answers
 	
@@ -16,7 +16,7 @@ function processQuiz()
 		counter = counter + 1;
 	}
 	
-	if( answer2 == 2 )
+	if( answer2 == 0 )
 	{
 		counter = counter + 1;
 	}
@@ -25,17 +25,14 @@ function processQuiz()
 	{
 		counter = counter + 1;
 	}
-        if( answer4 == 3 )
+        if( answer4 == 0 )
 	{
 		counter = counter + 1;
 	}
-        if( answer5 == 2 )
-	{
-		counter = counter + 1;
-	}
+        
 	
 	alert( "You got " + counter + " questions correct!" );
 	
-	var percentage = counter / 5;
+	var percentage = counter * 25 * 4 / 4;
 	alert( "Your score is " + percentage + "%" );
 }
