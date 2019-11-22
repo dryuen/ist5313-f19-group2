@@ -71,12 +71,24 @@
 						<th>			
 			
 							<div style="width:auto; height:auto; padding:20px; text-align:center; border: 5px solid #F9C2F1;">
- Example quiz question:<br>
-When can do you take you dog to restroom?<br>
-a. When you go<br>
-b. Whenever you feel like it<br>
-c.<br>
-d.<br>
+ 
+                                    <p> Take this test</p>
+                                    <form onSubmit="javascript:processQuiz();" name="quiz1" id="quiz1">
+					<label for="question1">When can do you take you dog to restroom?</label><br/>
+					<input type="radio" id="question1" name="question1" value="0"/>When you go<br/>
+					<input type="radio" id="question1" name="question1" value="1"/>Whenever you feel like it<br/>
+					<input type="radio" id="question1" name="question1" value="2"/>whenever you want<br/>
+                                        <input type="radio" id="question1" name="question1" value="3"/>When he/she is asleep<br/>
+					<br/>
+                                       <label for="question2">how many timnes is good to feed your dog a day?</label><br/>
+					<input type="radio" id="question2" name="question2" value="0"/>Once<br/>
+					<input type="radio" id="question2" name="question2" value="1"/>Twice<br/>
+					<input type="radio" id="question2" name="question2" value="2"/>Five times a day<br/>
+                                        <input type="radio" id="question2" name="question2" value="3"/>Eight times a day<br/>
+					<br/>
+                                        <input type="submit" value="Submit your Answers"/>
+                                        </form>
+
 
 </div>
 	</th>
