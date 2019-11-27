@@ -36,3 +36,4 @@ function processQuiz()
 	var percentage = counter * 25 * 4 / 4;
 	alert( "Your score is " + percentage + "%" );
 }
+
