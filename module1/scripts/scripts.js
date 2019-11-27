@@ -38,7 +38,6 @@ function startCourse()
 			sessionStorage.setItem( "page10Visited", "unvisited" );
 			sessionStorage.setItem( "page11Visited", "unvisited" );
 			sessionStorage.setItem( "page12Visited", "unvisited" );
-			sessionStorage.setItem( "page13Visited", "unvisited" );
 			 }
 	}
 	
@@ -164,14 +163,6 @@ function visitpage12()
 	//alert( "page12.html");
 	checkAllVisited();
 }
-
-function visitpage13()
-{
-	sessionStorage.setItem( "page13Visited", "visited" );
-	//alert( "page13.html");
-	checkAllVisited();
-}
-
 
 function checkAllVisited()
 {
