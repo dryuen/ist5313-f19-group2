@@ -6,7 +6,7 @@ function processQuiz()
 	var answer1 = document.forms.quiz1.question1.value;
 	var answer2 = document.forms.quiz1.question2.value;
 	var answer3 = document.forms.quiz1.question3.value;
-        var answer4 = document.forms.quiz1.question4.value;
+    var answer4 = document.forms.quiz1.question4.value;
         
 
 	var counter = 0;		// This variable keeps track of the number of correct answers
@@ -35,4 +35,9 @@ function processQuiz()
 	
 	var percentage = counter * 25 * 4 / 4;
 	alert( "Your score is " + percentage + "%" );
+	
+	if( percentage >= 75 )
+	{
+	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
+	}
 }
