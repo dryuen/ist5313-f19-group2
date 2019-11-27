@@ -68,9 +68,11 @@
 <th>			
 			
 			<div style="width:auto; height:auto; padding:20px; text-align:center; border: 5px solid #F9C2F1;">
+			
 
   <p> Take this test</p>
-                                    <form onSubmit="javascript:processQuiz();" name="quiz1" id="quiz1">
+ <!--                                   <form onSubmit="javascript:processQuiz();" name="quiz1" id="quiz1">  -->
+ 					<form id="quiz1" name="quiz1" action="javascript:processQuiz(); return false;">
 					<div align="left"><label for="question1">It is important to be prepared before you begin leash training because...&#63;</label><br/>
 					<div align="left"><input type="radio" id="question1" name="question1" value="0"/>You need to provide structure for your dog to be successful<br/>
 					<div align="left"><input type="radio" id="question1" name="question1" value="1"/>Your dog will know what to do when they see their leash<br/>
@@ -100,7 +102,7 @@
                                         <input type="submit" value="Submit your Answers"/>
                                         </form>
    
-   
+  
 
 	</div> </th>
 
