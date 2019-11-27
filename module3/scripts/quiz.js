@@ -31,8 +31,20 @@ function processQuiz()
 	}
         
 	
-	alert( "You got " + counter + " questions correct!" );
+	//alert( "You got " + counter + " questions correct!" );
 	
 	var percentage = counter * 25 * 4 / 4;
-	alert( "Your score is " + percentage + "%" );
+	if( percentage >= 70 )
+	{
+		alert( "Your score is " + percentage + "%. You passed." );
+		document.getElementById( "certificate-link" ).style.display = "inline";
+	}
+	else
+	{
+		alert( "Your score is " + percentage + "%. You failed." );
+		
+	}
+	var score = percentage;
+	parent.reportScores( score );
+
 }
