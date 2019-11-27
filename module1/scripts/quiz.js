@@ -11,21 +11,21 @@ function processQuiz()
 
 	var counter = 0;		// This variable keeps track of the number of correct answers
 	
-	if( answer1 == 1 )
+	if( answer1 == 2 )
 	{
 		counter = counter + 1;
 	}
 	
-	if( answer2 == 3 )
+	if( answer2 == 1 )
 	{
 		counter = counter + 1;
 	}
 	
-	if( answer3 == 0 )
+	if( answer3 == 1 )
 	{
 		counter = counter + 1;
 	}
-        if( answer4 == 1 )
+        if( answer4 == 3 )
 	{
 		counter = counter + 1;
 	}
