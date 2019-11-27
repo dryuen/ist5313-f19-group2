@@ -10,6 +10,7 @@ function processQuiz()
         
 
 	var counter = 0;		// This variable keeps track of the number of correct answers
+
 	
 	if( answer1 == 0 )
 	{
@@ -35,9 +36,7 @@ function processQuiz()
 	
 	var percentage = counter * 25 * 4 / 4;
 	alert( "Your score is " + percentage + "%" );
+	var score = percentage;
+	parent.reportScores( score );
 	
-	if( percentage >= 75 )
-	{
-	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
-	}
 }

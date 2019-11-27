@@ -160,6 +160,17 @@ function checkAllVisited()
 // This should only be called when the user submits the answers to the quiz
 function reportScores( score )
 {	
+	oScorm.set("cmi.core.score.raw", score);
+	oScorm.set("cmi.core.score.min", 70 );
+	oScorm.set("cmi.core.score.max", 100 );
+	if (cmi.core.score.raw < 70 )
+	{
+	oScorm.set( "cmi.core.lesson_status", "failed" );
+	}
+	else 
+	{
+	oScorm.set( "cmi.core.lesson_status", "passed" );
+	}
 	oScorm.save();
 }
 
@@ -169,3 +180,9 @@ function finishCourse()
 	oScorm.save();
 	oScorm.quit();
 }
+
+function visitCertificate()
+{
+	var learner_name = oScorm.get( "cmi.core.student_name" );
+	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
+	
