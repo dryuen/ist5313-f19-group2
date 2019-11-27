@@ -79,7 +79,8 @@
 		                        per question. Click the Submit Answers button when you have answered all 
 		                       the questions.</p>
                                   <section>
-			           <form id="quiz1" name="quiz1" action="javascript:processQuiz()">
+ 							<form id="quiz1" name="quiz1" onSubmit="javascript:processQuiz(); return false;">
+<!--			           <form id="quiz1" name="quiz1" action="javascript:processQuiz()"> -->
 					<div align="left"><label for="question1">When your dog does not perform the trick, you should &#63;</label><br/>
 					<div align="left"><input type="radio" id="question1" name="question1" value="0"/>Reward with a treat<br/>
 					<div align="left"><input type="radio" id="question1" name="question1" value="1"/>Yell at them<br/>
