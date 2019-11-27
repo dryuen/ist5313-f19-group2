@@ -161,15 +161,15 @@ function checkAllVisited()
 function reportScores( score )
 {	
 	oScorm.set("cmi.core.score.raw", score);
-	oScorm.set("cmi.core.score.min", 70 );
+	oScorm.set("cmi.core.score.min", 0 );
 	oScorm.set("cmi.core.score.max", 100 );
-	if (cmi.core.score.raw < 70 )
+	if ( score < 70 )
 	{
-	oScorm.set( "cmi.core.lesson_status", "failed" );
+		oScorm.set( "cmi.core.lesson_status", "failed" );
 	}
 	else 
 	{
-	oScorm.set( "cmi.core.lesson_status", "passed" );
+		oScorm.set( "cmi.core.lesson_status", "passed" );
 	}
 	oScorm.save();
 }
@@ -185,4 +185,4 @@ function visitCertificate()
 {
 	var learner_name = oScorm.get( "cmi.core.student_name" );
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
-	
+}
