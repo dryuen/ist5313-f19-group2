@@ -161,7 +161,7 @@ function checkAllVisited()
 	var p10 = sessionStorage.getItem( "page10Visited" );
 	
 	
-		//alert( p1 + ", " + p2 + ", " + p3 + ", " + p4 + ", " + p5 + ", " + p6 + ", " + p7 + ", " + p8 + ", " + p9 + ", " + p10 + ");
+		//alert( p1 + ", " + p2 + ", " + p3 + ", " + p4 + ", " + p5 + ", " + p6 + ", " + p7 + ", " + p8 + ", " + p9 + ", " + p10);
 	
 	if( p1 == "visited" && p2 == "visited" && p3 == "visited" && 
 		p4 == "visited" && p5 == "visited" && p6 == "visited" && 
