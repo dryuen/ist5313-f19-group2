@@ -29,5 +29,3 @@ function hideOutput()
 {
 	document.getElementById( "output-box" ).style.display = "none";
 }
-
-()
