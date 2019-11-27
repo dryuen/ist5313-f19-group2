@@ -16,16 +16,16 @@ function processQuiz()
 		counter = counter + 1;
 	}
 	
-	if( answer2 == 0 )
+	if( answer2 == 2 )
 	{
 		counter = counter + 1;
 	}
 	
-	if( answer3 == 0 )
+	if( answer3 == 1 )
 	{
 		counter = counter + 1;
 	}
-        if( answer4 == 0 )
+        if( answer4 == 3 )
 	{
 		counter = counter + 1;
 	}
