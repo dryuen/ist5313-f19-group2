@@ -38,7 +38,8 @@ function startCourse()
 			sessionStorage.setItem( "page10Visited", "unvisited" );
 			sessionStorage.setItem( "page11Visited", "unvisited" );
 			sessionStorage.setItem( "page12Visited", "unvisited" );
-			        }
+			sessionStorage.setItem( "page13Visited", "unvisited" );
+			 }
 	}
 	
 	// initializeSCORM after the OLM environment has been set up
@@ -135,6 +136,7 @@ function visitpage8()
 	checkAllVisited();
 }
 
+}
 function visitpage9()
 {
 	sessionStorage.setItem( "page9Visited", "visited" );
@@ -148,6 +150,7 @@ function visitpage10()
 	//alert( "page10.html");
 	checkAllVisited();
 }
+
 function visitpage11()
 {
 	sessionStorage.setItem( "page11Visited", "visited" );
@@ -159,6 +162,13 @@ function visitpage12()
 {
 	sessionStorage.setItem( "page12Visited", "visited" );
 	//alert( "page12.html");
+	checkAllVisited();
+}
+
+function visitpage13()
+{
+	sessionStorage.setItem( "page13Visited", "visited" );
+	//alert( "page13.html");
 	checkAllVisited();
 }
 
@@ -179,7 +189,8 @@ function checkAllVisited()
 	var p12 = sessionStorage.getItem( "page12Visited" );
 	
 	
-		//alert( p1 + ", " + p2 + ", " + p3 + ", " + p4 + ", " + p5 + ", " + p6 + ", " + p7 + ", " + p8 + ", " + p9 + ", " + p10 + ", " +p11 + ", " + p12 );
+		
+		//alert( p1 + ", " + p2 + ", " + p3 + ", " + p4 + ", " + p5 + ", " + p6 + ", " + p7 + ", " + p8 + ", " + p9 + ", " + p10 + ", " + p11 + ", " + p12);
 	
 	if( p1 == "visited" && p2 == "visited" && p3 == "visited" && 
 		p4 == "visited" && p5 == "visited" && p6 == "visited" && 
