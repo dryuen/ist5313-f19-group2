@@ -35,8 +35,7 @@ function startCourse()
 			sessionStorage.setItem( "page7Visited", "unvisited" );
 			sessionStorage.setItem( "page8Visited", "unvisited" );
 			sessionStorage.setItem( "page9Visited", "unvisited" );
-			sessionStorage.setItem( "page10Visited", "unvisited" );
-			
+			sessionStorage.setItem( "page10Visited", "unvisited" );	
         }
 	}
 	
@@ -173,6 +172,7 @@ function checkAllVisited()
 		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
 	}
 }
+
 
 // This function reports the score from the assessment to the LMS
 // This should only be called when the user submits the answers to the quiz
