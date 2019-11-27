@@ -11,7 +11,7 @@ function processQuiz()
 
 	var counter = 0;		// This variable keeps track of the number of correct answers
 	
-	if( answer1 == 0 )
+	if( answer1 == 1 )
 	{
 		counter = counter + 1;
 	}
