@@ -45,6 +45,17 @@ h3
 	background: purple;
 	font-size: 30px;
 }
+
+h4
+{
+	color: #E74C3C;
+	text-align: center;
+	font-family: Arial;
+	background: pink;
+	font-size: 20px;
+}
+
+
 p
 {
 	color: #f0233zf;
@@ -284,6 +295,18 @@ main {
 
 		}	
 		
+		.Center{
+    width:200px;
+    height:200px;
+    background:#0088cc;
+    margin:auto;
+    padding:0%;
+    position: relative;
+    top: 0; left: 0; bottom: 0; right: 0;
+    border-radius:5%;
+}
+		
+		
 		.button {
   font: bold 11px Arial;
   text-decoration: none;
@@ -294,7 +317,21 @@ main {
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
-}	
+
+ }	
+
+.button1 {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+ 
+ }	
 
 
 
@@ -307,3 +344,6 @@ main {
 {
 	display: none;
 }
+
+
+

@@ -91,37 +91,85 @@
 					</tr>
 				</table>
 	
-				<div class="quiz-wrapper">
-					<p class="question-description">Fill in the blanks by dragging the missing answer.</p>
-					<ul class="options">
-					<li class="title">Options</li>
-					<li class="option" data-target="15">15-30 Minutes</li>
-					<li class="option" data-target="schedule">Stick to a schedule</li>
-					<li class="option" data-target="twice">Twice per day</li>
-					<li class="option" data-target="calm">Stay calm</li>
-				</ul>
-			<div class="answers">
-			<ol>
-				<li><span class="target" data-accept="schedule">&nbsp;</span> To get the best results</li>
-				<li><span class="target" data-accept="15">&nbsp;</span>Is the best amount of time to spend during a training session.</span></li>
-				<li>Stay to ensure success <span class="target" data-accept="calm">&nbsp;</span></li>
-				<li>You should practice this make times per day<span class="target" data-accept="twice">&nbsp;</span>their home.</li>
-			</ol>
-			</div>
- 				<button type="submit" value="submit">Submit</button>
- 				<div class="lightbox-bg"></div>
- 				<div class="status confirm">
-  				 <p>All Answers Answered</p>
-			 </div>
- 			<div class="status deny">
-   			<p>Answers Remain</p>
- 			</div>
-	</div>
-		
-			<a href="page2.html" class="button" align="right">Previous Page</a>
-			<a href="page4.html" class="button">Next Page</a>
+			
 	
+	
+ 
+
+<link href="styles/drag-and-drop-styles.css" rel="stylesheet" type="text/css"/>
+		<script src="scripts/drag-and-drop.js"></script>
+	</head>
+    <body>
+    	<article>
+        	<header>
+            	<h1>Drag and Drop Activity</h1>
+            </header>
+            
+            <section>
+         		<form name="dd1" onsubmit="javascript:processForm(); return false;">  
+				<p>Match the correct ending to each statement begining.</p>
+				
+				<div class="column">
+						<h4>Statement begining</h4>
+				     	<div id="db1" value="0" class="draggerbay" 
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>To ensure success </p></div><br/>                        
+				 		<div id="db2" value="1" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>Practice how often</p></div><br/>  
+					 	<div id="db3" value="2" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>Best training time duration </p></div><br/> 
+					 	<div id="db4" value="3" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>To get the best results</p></div><br/>  
+				</div>
+				
+				<div class="column">
+						<h4>Statment ending</h4>
+					 	<div id="d1" value="3" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>stick to a schedule</p></div><br/>  
+				     	<div id="d2" value="2" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>15-30 Minutes</p></div><br/>                        
+				 		<div id="d3" value="0" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>stay calm</p></div><br/>  
+					 	<div id="d4" value="1" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>twice per day</p></div><br/>  
+				</div>
+				<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+<div class='Bottom' align='left'>
+    
+				
+				<p id="response">&nbsp;</p>
+				<input type="submit" name="button" value="Submit Your Answer"/></br>
+</div><br></br>
+				   				
+				</form>
+            </section>
+</div>
+        </article>
+    	<footer>
+        </footer>
+    </body>
+
+
+
+
+<div>
+		
+			<a href="page2.html" class="button">Previous Page</a> 			
+			<a href="page4.html" class="button1">Next Page</a>
 			</div>
+	
+			
 
 		</main>
 		
