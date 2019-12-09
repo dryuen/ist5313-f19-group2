@@ -221,7 +221,3 @@ function visitCertificate()
 	var learner_name = oScorm.get( "cmi.core.student_name" );
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
 }
-
-<audio id="sound1" src="yoursound.mp3" preload="auto"></audio>
-  <button onclick="document.getElementById('sound1').play();">Play
-  it</button>
