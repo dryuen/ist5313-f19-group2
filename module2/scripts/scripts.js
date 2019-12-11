@@ -41,7 +41,7 @@ function startCourse()
 	initializeSCORM();
 	
 
-}
+
 
 // This function initializes the course by connecting the course to the LMS 
 // The SCORM connection is done once at the beginning of the course
